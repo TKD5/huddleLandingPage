@@ -1,0 +1,163 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --softMagenta: hsl(300, 69%, 71%);
+}
+
+body {
+    background-image: url(images/bg-desktop.svg);
+    background-color: var(--violet);
+}
+
+.logo {
+    padding-left: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.text-content {
+    width: 100%;
+    height: 100%;
+}
+.title {
+    padding: 3rem;
+    color: whitesmoke;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    width: 90%;
+}
+
+.text {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    color: whitesmoke;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    width: 90%;
+}
+
+.register-btn {
+    margin-top: 3rem;
+    margin-left: 3rem;
+    padding: 0.9rem 6rem;
+    border: none;
+    border-radius: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--violet);
+    box-shadow: 2px 2px 10px 10px rgba(0, 0, 0, 0.203);
+    cursor: pointer;
+}
+
+.register-btn:hover {
+    background-color: var(--softMagenta);
+}
+
+.box:hover {
+    color: var(--softMagenta);
+    border-color: var(--softMagenta);
+}
+
+.icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    vertical-align: middle;
+    gap: 20px;
+    padding-right: 3rem;
+    font-size: 20px;
+    color: whitesmoke;
+    margin-bottom: 1rem;
+}
+
+.fa-brands {
+    cursor: pointer;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid whitesmoke;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.attribution { 
+    font-size: 14px; 
+    text-align: center; 
+}
+    .attribution a { 
+        color: hsl(228, 52%, 30%); }
+
+@media screen and (max-width: 426px) {
+
+    .logo {
+        padding: 3rem 2rem;
+        height: 20px;
+    }
+
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .image-content img{
+        height: 320px;
+        padding: 2.5rem 0;
+    }
+    
+    .text-content {
+        width: 100%;
+    }
+
+    .title {
+        width: 100%;
+        text-align: center;
+        padding-top: 0;
+    }
+
+    .text {
+        text-align: center;
+        width: 100%;
+    }
+
+    .button {
+        width: 89%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    footer {
+        width: 110%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .attribution {
+        margin-bottom: 1rem;
+    } 
+}
